@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITEHOUSE</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">WHITEHOUSE</h1>
+        <ul class="nav-links">
+            <li class="ctn"><a href="#home"></a>Home</li>
+            <li class="ctn"><a href="#explore1">Book Now</a></li>
+            <li class="ctn"><a href="#"></a>Explore</li>
+            <li class="ctn"><a href="#"></a>About</li>
+            <li class="ctn"><a href="#explore1">Contact</a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <header>
+        <div class="header-content" id="home">
+            <h2>ACOUSTIC CONVENTION CENTER</h2>
+            <div class="line"></div>
+            <h1>WHITEHOUSE<br>CONVENTION CENTER</h1>
+            <a href="#ex1" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+   
+    <section class="events" id="ex1">
+        <div class="title">
+            <h1>Why Choose Us</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/WH2.png" alt="">
+                <h4>Ample Parking</h4>
+                <p>The main highlight of White House Convention Center is its ample car parking space which can accomodate more than 60 cars at a time.</p>
+            </div>
+            <div class="col">
+                <img src="./img/WH1.png" alt="">
+                <h4>Fully Air Conditioned & Acoustic Hall</h4>
+                <p>The fully air conditioned interior & Acoustic Environment with a classy and standard design brings world class look to White House Convention Centre</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore" id="explore1">
+      <div class="explore-content">
+        <h1>Book Your Event Now</h1>
+        <div class="line"></div>
+        <div class="col">
+            <img src="./img/imgn.png" alt="">
+        </div>
+        <div class="col">
+            <hr>
+            <div>
+                <iframe class="embed-responsive-item" src="//www.youtube.com/embed/JA1fkESDUtk?rel=0&amp;showinfo=0"></iframe>
+            </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>PHOTO GALLERY</h1>
+                <div class="line"></div>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./Wh/img11 (9).jpg" alt="">
+                    <img src="./Wh/img11 (5).jpg" alt="">
+                    <img src="./Wh/img11 (7).jpg" alt="">
+                    <img src="./Wh/img11 (8).jpg" alt="">
+                    <img src="./Wh/img11 (3).jpg" alt="">
+                    <img src="./Wh/wh5.jpg" alt="">
+                    <img src="./Wh/wh2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Powered by MTV WEB SOLUTIONS & WEB CONSULTANCY | Phone: 7736701028 | Email: m2vcreate@gmail.com</p>
+        <p>Copyright © 2020 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>
