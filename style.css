@@ -59,7 +59,8 @@ header {
 }
 .header-content h2 {
     font-size: 4vmin;
-    color:black;
+    color: whitesmoke;
+    text-shadow: 0px 0px 8px black;
     font: montserrat;
 }
 .line {
@@ -78,6 +79,9 @@ header {
     padding: 8px 15px;
     background: #fc036b;
     border-radius: 30px;
+    color: whitesmoke;
+}
+.ctn > a {
     color: whitesmoke;
 }
 .menu-btn,.close-btn{
