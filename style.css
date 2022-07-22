@@ -52,11 +52,10 @@ header {
     background-position: bottom;
     background-size: cover;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .header-content {
-    margin-bottom: 150px;
     color:whitesmoke;
     text-align: center;
 }
